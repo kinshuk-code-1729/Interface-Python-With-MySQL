@@ -1,0 +1,12 @@
+import mysql.connector as kb
+x=kb.connect(host="localhost",user="root",passwd="cs",charset="utf8",database="kinshuk")
+crsr=x.cursor()
+#crsr.execute("create table SOFTDRINK(DRINKCODE int,DNAME varchar(50),PRICE float,CALORIES int)")
+dc=int(input("Enter dcode : "))
+name=input("Enter dname : ")
+price=float(input("Enter price : "))
+clr=int(input("Enter no. of calories : "))
+g="insert into SOFTDRINK values({},'{}',{},{})".format(dc,name,price,clr)
+crsr.execute(g)
+x.commit()
+x.close()
