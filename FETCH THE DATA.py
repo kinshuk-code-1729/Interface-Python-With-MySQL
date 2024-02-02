@@ -1,6 +1,6 @@
 import mysql.connector as sqltor
-con=sqltor.connect(host="localhost",user="root",passwd="kb",charset="utf8",database="MYSQL")
+con=sqltor.connect(host="localhost",user="root",passwd="",charset="utf8",database="pydb")
 cur=con.cursor()
-cur.execute("SELECT*FROM HELP_TOPIC")
+cur.execute("SELECT*FROM SOFTDRINK")
 for k in cur:
     print(k)

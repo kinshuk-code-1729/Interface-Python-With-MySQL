@@ -1,5 +1,5 @@
 import mysql.connector as kb
-x=kb.connect(host="localhost",user="root",passwd="cs",charset="utf8",database="kinshuk")
+x=kb.connect(host="localhost",user="root",passwd="",charset="utf8",database="pydb")
 crsr=x.cursor()
 #crsr.execute("create table books(Title varchar(20),ISBN bigint)")
 title=input("Enter book title : ")

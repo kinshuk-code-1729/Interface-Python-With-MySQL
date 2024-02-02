@@ -1,7 +1,7 @@
 import mysql.connector as kb
-x=kb.connect(host="localhost",user="root",passwd="cs",charset="utf8",database="kinshuk")
+x=kb.connect(host="localhost",user="root",passwd="",charset="utf8",database="pydb")
 crsr=x.cursor()
-#crsr.execute("create table SOFTDRINK(DRINKCODE int,DNAME varchar(50),PRICE float,CALORIES int)")
+# crsr.execute("create table SOFTDRINK(DRINKCODE int,DNAME varchar(50),PRICE float,CALORIES int)")
 dc=int(input("Enter dcode : "))
 name=input("Enter dname : ")
 price=float(input("Enter price : "))
